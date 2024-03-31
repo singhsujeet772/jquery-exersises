@@ -9,7 +9,6 @@
 
 <body>
     <!-- Test if jQuery is loaded. -->
-    <!-- Scroll to the top of the page with jQuery. -->
     <h1>Come Here</h1>
     <p>jquery</p>
     <p>jquery</p>
@@ -49,10 +48,15 @@
     <script>
         $(document).ready(function () {
             console.log('Hello World');
+            //Scroll to the top of the page with jQuery
             $("a[href='#top']").click(function(){
                 console.log("Clicked");
                 $("body").scrollTop(0);
-            })
+            });
+            //Disable right click menu in html page using jquery
+            $("body").on("contextmenu",function(e){
+                e.preventDefault();
+            });
         });
     </script>
 </body>
