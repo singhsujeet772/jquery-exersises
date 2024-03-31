@@ -9,11 +9,50 @@
 
 <body>
     <!-- Test if jQuery is loaded. -->
+    <!-- Scroll to the top of the page with jQuery. -->
+    <h1>Come Here</h1>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <p>jquery</p>
+    <a href='#top'>Go Top</a>
 
     <script src="../js/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             console.log('Hello World');
+            $("a[href='#top']").click(function(){
+                console.log("Clicked");
+                $("body").scrollTop(0);
+            })
         });
     </script>
 </body>
